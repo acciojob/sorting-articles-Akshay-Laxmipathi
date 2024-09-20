@@ -4,22 +4,22 @@ let data = document.getElementById("bands");
 
 bands.sort((a,b) => {
 	let x = "", y = "";
-	if(a.substring(0,1) == 'A') {
+	if(a.substring(0,2) == 'A ') {
 		x = a.substring(2);
 	}
-	else if(a.substring(0,2) == 'An') {
+	else if(a.substring(0,3) == 'An ') {
 		x = a.substring(3);
 	}
-	else if(a.substring(0,3) == 'The') {
+	else if(a.substring(0,4) == 'The ') {
 		x = a.substring(4);
 	}
-	if(b.substring(0,1) == 'A') {
+	if(b.substring(0,2) == 'A ') {
 		y = b.substring(2);
 	}
-	else if(b.substring(0,2) == 'An') {
+	else if(b.substring(0,3) == 'An ') {
 		y = b.substring(3);
 	}
-	else if(b.substring(0,3) == 'The') {
+	else if(b.substring(0,4) == 'The ') {
 		y = b.substring(4);
 	}
 	return x-y;
