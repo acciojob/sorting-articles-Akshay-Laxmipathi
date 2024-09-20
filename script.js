@@ -13,6 +13,9 @@ bands.sort((a,b) => {
 	else if(a.substring(0,4) == 'The ') {
 		x = a.substring(4);
 	}
+	else {
+		x = a;
+	}
 	if(b.substring(0,2) == 'A ') {
 		y = b.substring(2);
 	}
@@ -22,6 +25,9 @@ bands.sort((a,b) => {
 	else if(b.substring(0,4) == 'The ') {
 		y = b.substring(4);
 	}
+	else (
+		y = b;
+	)
 	return x-y;
 });
 
