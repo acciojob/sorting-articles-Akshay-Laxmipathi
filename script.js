@@ -28,7 +28,7 @@ bands.sort((a,b) => {
 	else {
 		y = b;
 	}
-	return x-y;
+	return x>y;
 });
 
 for(let i=0; i<bands.length; i++) {
